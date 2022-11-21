@@ -43,6 +43,15 @@ public class Student {
                     Student student = new Student(adNo, name, rollNo, collegeName);
                     studentArr.add(student);
                     break;
+                case 2 :
+                    System.out.println("Student details");
+                    for (Student student1 : studentArr){
+                        System.out.println("Ad Number: "+student1.adNo);
+                        System.out.println("Name: "+student1.name);
+                        System.out.println("Roll Number: "+student1.rollNo);
+                        System.out.println("College Name: "+student1.collegeName);
+                    }
+                    break;
             }
         }
     }
