@@ -52,6 +52,20 @@ public class Student {
                         System.out.println("College Name: "+student1.collegeName);
                     }
                     break;
+                case 3 :
+                    System.out.println("Enter the admission number");
+                    int adNo1 = sc.nextInt();
+                    for(Student student1 : studentArr){
+                        if(adNo1==student1.adNo){
+                            System.out.println("Student with admission number " + adNo1 + " is " + student1.name);
+                            break;
+                        }
+                        else {
+                            System.out.println("No such student found");
+                        }
+                    }
+                    break;
+
             }
         }
     }
