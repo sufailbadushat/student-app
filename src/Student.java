@@ -65,6 +65,22 @@ public class Student {
                         }
                     }
                     break;
+                case 4 :
+                    System.out.println("Enter the admission number");
+                    int adNo2 = sc.nextInt();
+                    for (Student student1 : studentArr){
+                        if(adNo2==student1.adNo){
+
+                            studentArr.remove(student1);
+                            System.out.println("Student with admission number "+adNo2+" has been removed.");
+                            break;
+                        }
+                    }
+                    break;
+                case 5:
+                    System.exit(0);
+                default:
+                    System.out.println("Enter valid operation number");
 
             }
         }
